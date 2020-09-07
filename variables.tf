@@ -19,19 +19,19 @@ variable "stage" {
 }
 
 variable "delimiter" {
-  type        = "string"
+  type        = string
   default     = "-"
   description = "Delimiter to be used between `namespace`, `stage`, `name` and `attributes`"
 }
 
 variable "attributes" {
-  type        = "list"
+  type        = list
   default     = []
   description = "Additional attributes (e.g. `1`, `a`, etc)"
 }
 
 variable "tags" {
-  type        = "map"
+  type        = map
   default     = {}
   description = "Additional tags (e.g. `{\"BusinessUnit\" = \"XYZ\"}`)"
 }
